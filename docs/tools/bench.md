@@ -26,6 +26,7 @@ The current benchmarks are:
 * `conjugate-gradient`: Uses conjugate gradients to solve `Ax=b` for any arbitrary positive semidefinite `A`.
 * `connected-components`: Compute and print each [connected component][component] in the [adjacency matrix][adj] of an undirected graph.
 * `1dconv`: Creates a kernel and array, performs a one-dimensional convolution operation, and prints out the values in the resulting array.
+* `2dconvol`: Creates a 2d image and kernel and performs a 2d convolution on the image, and prints out the values of the image, kernel, and resulting output. 
 * `cordic`: Print an approximation of sine(radians) using 8 iterations of the [CORDIC algorithm](https://en.wikipedia.org/wiki/CORDIC).
 * `csrmv`: Multiply a sparse matrix in the [Compressed Sparse Row (CSR)][csr] format with a dense vector. The matrix and input vector are generated using a [Linear Feedback Shift Register](https://en.wikipedia.org/wiki/Linear-feedback_shift_register) random number generator.
 * `digial-root`: Computes the digital root of the input number.
@@ -42,6 +43,7 @@ The current benchmarks are:
 * `fizz-buzz`: The infamous [programming test][fizzbuzz].
 * `fnv1-hash`: Compute the [Fowler-Noll-Vo hash function](https://en.wikipedia.org/wiki/Fowler%E2%80%93Noll%E2%80%93Vo_hash_function) of an integer array.
 * `function_call`: For benchmarking the overhead of simple function calls.
+* `gebmm`: Perform binary matrix multiplication of two matrices represented by packed integer arguments.
 * `gcd`: Calculate Greatest Common Divisor (GCD) of two input positive integer using [Euclidean algorithm][euclidean_into].
 * `geometric-sum`: Calculate [Geometric Sum](https://en.wikipedia.org/wiki/Geometric_series) given first term, common ratio and number of terms.
 * `gol`: Print the next iteration for a matrix in [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life).
@@ -85,8 +87,10 @@ The current benchmarks are:
 * `fitsinside`: Output whether or not a rectangle fits inside of another rectangle given the width and height lengths.
 * `relative-primes`: Print all numbers relatively prime to *n* using [Euclidean algorithm][euclidean_into].
 * `riemann`: Prints the left, midpoint, and right [Riemann][riemann] Sums for a specified function, which is the square function in this benchmark.
+* `rot13`: Prints the [rot13][rot13] substitution of a character (represented as an integer in the range 0 to 25).
 * `shufflesort`: Sorts a list by shuffling it until it is sorted.
 * `sieve`: Print all prime numbers up to *n* using the [Sieve of Eratosthenes][sievee].
+* `sorting-network-five`: An optimal sorting network for 5 integer inputs.
 * `sqrt`: Implements the [Newton–Raphson Method][newton] of approximating the square root of a number to arbitrary precision
 * `sqrt_bin_search`: Uses a binary search to find the floor of the square root of an integer
 * `sum-bit`: Print the number of 1-bits in the binary representation of the input integer.
@@ -129,6 +133,7 @@ Credit for several of these benchmarks goes to Alexa VanHattum and Gregory Yaune
 [adler32]: https://en.wikipedia.org/wiki/Adler-32
 [uparrow]: https://en.wikipedia.org/wiki/Knuth%27s_up-arrow_notation
 [riemann]: https://en.wikipedia.org/wiki/Riemann_sum
+[rot13]: https://en.wikipedia.org/wiki/ROT13
 [primitive_root]: https://en.wikipedia.org/wiki/Primitive_root_modulo_n
 [mandelbrot]: https://en.wikipedia.org/wiki/Mandelbrot_set
 [palindrome]: https://en.wikipedia.org/wiki/Palindrome
